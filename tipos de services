@@ -1,0 +1,11 @@
+#Load Balancer:
+balanceo, Exponer fuera del cluster, service discovery
+
+#Cluster IP:
+Balanceo, pero dentro del cluster, no tiene un pie fuera del cluster,service discovery
+
+#NodePort:
+Puerto en el nodo donde esta corriendo para poder verlo desde afuera.
+* Base de datos
+* Dynatrace, newrelic, datadog, grafana
+
