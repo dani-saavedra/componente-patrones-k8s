@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: componente-patrones
+  labels:
+    app: componente-patrones
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: componente-patrones
+  template:
+    metadata:
+      labels:
+        app: componente-patrones
+    spec:
+      containers:
+        - image: danielsabana/componente_patrones:2.1.0
+          name: componente-patrones
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              cpu: "170m"
+              memory: "500Mi"
+            #limit:
+             # cpu:
+              #memory:
