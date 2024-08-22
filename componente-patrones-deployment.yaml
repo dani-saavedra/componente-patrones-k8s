@@ -15,7 +15,7 @@ spec:
         app: componente-patrones
     spec:
       containers:
-        - image: 'danielsabana/componente_patrones:14a9460578272d7c64cfd6d542e112ed683985a4'
+        - image: 'danielsabana/componente_patrones:903292f825a5b170ab156dd39e124d325f962ed6'
           name: componente-patrones
           ports:
             - containerPort: 8080
