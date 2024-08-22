@@ -25,3 +25,12 @@ spec:
               memory: "500Mi"
             limits:
               cpu: "400m"
+          startupProbe:
+            httpGet:
+              path: /saludo
+              port: 8080
+            initialDelaySeconds: 26
+          readinessProbe:
+            httpGet:
+              path: /saludo
+              port: 8080
