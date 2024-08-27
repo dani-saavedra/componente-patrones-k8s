@@ -5,7 +5,6 @@ metadata:
   labels:
     app: componente-patrones
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: componente-patrones
