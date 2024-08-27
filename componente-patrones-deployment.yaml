@@ -23,7 +23,7 @@ spec:
               cpu: "170m"
               memory: "500Mi"
             limits:
-              cpu: "400m"
+              cpu: "800m"
           startupProbe:
             httpGet:
               path: /saludo
