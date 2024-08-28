@@ -3,9 +3,7 @@ kind: Ingress
 metadata:
   name: componente-patrones
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"  # Redirige HTTP a HTTPS si tienes TLS configurado
-    nginx.ingress.kubernetes.io/use-regex: "true" 
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: nginx
   rules:
@@ -16,6 +14,6 @@ spec:
             name: componente-patrones
             port:
               number: 80
-        path: /
-        pathType: Prefix
+        path: /app(/|$)(.*)
+        pathType: ImplementationSpecific
         
