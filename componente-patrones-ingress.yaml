@@ -16,6 +16,6 @@ spec:
             name: componente-patrones
             port:
               number: 80
-        path: /app
+        path: /
         pathType: Prefix
         
