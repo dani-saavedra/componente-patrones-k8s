@@ -14,7 +14,7 @@ spec:
         app: componente-patrones
     spec:
       containers:
-        - image: 'danielsabana/componente_patrones:0.0.0'
+        - image: 'davidh120/python-rest-api:63c08087921e8b403a483604d76c587d9ccaf7d7'
           name: componente-patrones
           ports:
             - containerPort: 3000
