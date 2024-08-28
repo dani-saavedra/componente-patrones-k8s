@@ -17,4 +17,4 @@ spec:
         - image: 'davidh120/python-rest-api:63c08087921e8b403a483604d76c587d9ccaf7d7'
           name: componente-patrones
           ports:
-            - containerPort: 3000
+            - containerPort: 8000
